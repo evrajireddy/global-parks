@@ -21,7 +21,6 @@ function App() {
     <Route path="/show" element={<Show/>}/>
     <Route path="/about" element={<About/>}/>
     <Route path="*" element={<Error/>}/>
-    
   </Routes>
   <Footer/>
 </Router>
