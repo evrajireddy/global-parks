@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import { countries, parks } from "../assets/data";
 
 export default function Home() {
   const [parks, setParks] = useState([]);
