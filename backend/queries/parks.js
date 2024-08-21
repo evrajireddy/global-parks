@@ -9,6 +9,15 @@ const getAllParks = async () => {
     }
   };
   
+  const getAPark = async (id) => {
+    try {
+      const onePark = await db.one("SELECT * FROM parks WHERE id=$1", id);
+      return onePark;
+    } catch (error) {
+      return error;
+    }
+  };
   module.exports = {
     getAllParks,
+    getAPark,
   };

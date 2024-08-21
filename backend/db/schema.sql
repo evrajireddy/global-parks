@@ -22,7 +22,8 @@ CREATE TABLE parks(
     camping BOOLEAN,
     ecosystem TEXT,
     state TEXT,
-    wildlife BOOLEAN
+    wildlife BOOLEAN,
+    country_name TEXT
 );
 
 DROP TABLE IF EXISTS reviews;

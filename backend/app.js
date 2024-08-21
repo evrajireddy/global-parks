@@ -19,5 +19,8 @@ app.use("/countries", countriesController);
 const parksController = require("./controllers/parksController");
 app.use("/parks", parksController);
 
+const reviewsController = require("./controllers/reviewsController");
+app.use("/parks/:parkId/reviews", reviewsController);
+
 
 module.exports = app;
